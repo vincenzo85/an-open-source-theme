@@ -40,6 +40,11 @@
 	
  <!-- Theme CSS -->
 	<link href="<?php bloginfo('stylesheet_directory'); ?>/css/agency.min.css" rel="stylesheet">
+	
+	<style type="text/css"> 
+	header { background-image: url(<?php bloginfo('stylesheet_directory'); ?>/img/header-bg.jpg); } 
+	</style>
+	
 
 <?php wp_head(); ?>
 
@@ -105,6 +110,11 @@
         </div>
     </header>
 		
+		<!-- intro -->
+			
+			<?php get_template_part('content','service'); ?>
+		
+		<!-- / intro -->
 		
 		
 		
