@@ -141,3 +141,9 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+// Add specific CSS class by filter.
+ 
+add_filter( 'body_class', function( $classes ) {
+    return array_merge( $classes, array( 'index' ) );
+} );

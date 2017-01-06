@@ -8,7 +8,16 @@
  *
  * @package freecircle
  */
-
+ 
+ $home_a			= get_field('home_a');
+ $home_service		= get_field('home_service');
+ $home_portfolio	= get_field('home_portfolio');
+ $home_about		= get_field('home_about');	
+ $home_team			= get_field('home_team');
+ $home_contact		= get_field('home_contact');
+ $home_leadin		= get_field('home_leadin');
+ $home_heading		= get_field('home_heading');
+ $home_services		= get_field('home_services');
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -40,32 +49,63 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-
-<body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'an-open-source-theme' ); ?></a>
-
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'an-open-source-theme' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+<body id="page-top" <?php body_class(); ?>>
+<!-- HEADER
+	================================================== -->
+	<header class="site-header" role="banner">
+		
+		<!-- NAVBAR
+		================================================== -->
+		<!-- Navigation -->
+			
+        <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><?php echo $home_a;?></a>
+            </div>
+			
+        <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services"><?php echo $home_service;?></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio"><?php echo $home_portfolio;?></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about"><?php echo $home_about;?></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team"><?php echo $home_team;?></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact"><?php echo $home_contact;?></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	
+	    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in"><?php echo $home_leadin; ?></div>
+                <div class="intro-heading"><?php echo $home_heading; ?></div>
+                <a href="#services" class="page-scroll btn btn-xl"><?php echo $home_services?></a>
+            </div>
+        </div>
+    </header>
+		
+		
+		
+		
+		
