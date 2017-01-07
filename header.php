@@ -125,7 +125,8 @@
 		<?php get_template_part('content','about'); ?>
 		<!-- about -->
 		<?php get_template_part('content','team'); ?>
-		
+		<!-- contact -->
+		<?php get_template_part('content','contact'); ?>
 		
 		
 		

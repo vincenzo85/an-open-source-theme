@@ -19,7 +19,7 @@ $linkedin	= get_field('linkedin');
 </html>
 
 
-   <footer>
+   <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
