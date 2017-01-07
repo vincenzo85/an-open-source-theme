@@ -45,7 +45,7 @@
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading"><?php echo $service_chead; ?></h4>
-                    <p class="text-muted"><?php echo $service_chead; ?></p>
+                    <p class="text-muted"><?php echo $service_csubhead; ?></p>
                 </div>
             </div>
         </div>

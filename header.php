@@ -45,6 +45,7 @@
 	header { background-image: url(<?php bloginfo('stylesheet_directory'); ?>/img/header-bg.jpg); } 
 	#services {background: white;}
 	.section-heading { color: black;}
+	.service-heading { color: black;}
 	</style>
 	
 	
@@ -113,11 +114,10 @@
         </div>
     </header>
 		
-		<!-- intro -->
-			
-			<?php get_template_part('content','service'); ?>
-		
-		<!-- / intro -->
+		<!-- service -->
+		<?php get_template_part('content','service'); ?>
+		<!-- portfolio -->
+		<?php get_template_part('content','portfolio'); ?>
 		
 		
 		
