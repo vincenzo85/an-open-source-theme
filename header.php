@@ -46,6 +46,9 @@
 	#services {background: white;}
 	.section-heading { color: black;}
 	.service-heading { color: black;}
+	#about {background: white;}
+	.about-subheading { color:black !important;}
+	.team-name {color:black;}
 	</style>
 	
 	
@@ -118,6 +121,11 @@
 		<?php get_template_part('content','service'); ?>
 		<!-- portfolio -->
 		<?php get_template_part('content','portfolio'); ?>
+		<!-- about -->
+		<?php get_template_part('content','about'); ?>
+		<!-- about -->
+		<?php get_template_part('content','team'); ?>
+		
 		
 		
 		

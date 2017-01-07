@@ -8,21 +8,12 @@
  *
  * @package freecircle
  */
-
+$footer_copyright 	=  get_field('footer_copyright');
+$twitter 	=  get_field('twitter');
+$facebook 	= get_field('facebook');
+$linkedin	= get_field('linkedin');
 ?>
 
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'an-open-source-theme' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'an-open-source-theme' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'an-open-source-theme' ), 'an-open-source-theme', '<a href="https://automattic.com/" rel="designer">Vincenzo Di Franco</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
-<?php wp_footer(); ?>
 
 </body>
 </html>
@@ -32,15 +23,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2016</span>
+                    <span class="copyright"><?php echo $footer_copyright; ?></span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        <li><a href="<?php echo $twitter; ?>"><i class="fa fa-twitter"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        <li><a href="<?php echo $facebook; ?>"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        <li><a href="<?php echo $linkedin; ?>"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
