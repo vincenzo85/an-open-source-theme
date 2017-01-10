@@ -49,6 +49,8 @@
 	#about {background: white;}
 	.about-subheading { color:black !important;}
 	.team-name {color:black;}
+	.footer {background:white;}
+	.copyright {color:black;}
 	</style>
 	
 	
