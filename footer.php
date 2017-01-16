@@ -15,8 +15,7 @@ $linkedin	= get_field('linkedin');
 ?>
 
 
-</body>
-</html>
+
 
 
    <footer class="footer">
